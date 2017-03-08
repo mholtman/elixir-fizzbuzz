@@ -9,4 +9,12 @@ defmodule FizzBuzzTest do
   test "fizzbuzz returns 2 when passed 2" do
     assert FizzBuzz.fizzbuzz(2) == 2
   end
+
+  test "fizzbuzz returns fizz when passed 3" do
+    assert FizzBuzz.fizzbuzz(3) == :fizz
+  end
+
+  test "fizzbuzz returns fizz when passed multiple of 3" do
+    assert FizzBuzz.fizzbuzz(6) == :fizz
+  end
 end

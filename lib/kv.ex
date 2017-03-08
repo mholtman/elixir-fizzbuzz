@@ -13,6 +13,11 @@ defmodule FizzBuzz do
 
   """
   def fizzbuzz(num) do
-    num
+    if rem(num, 3) == 0 do
+        :fizz
+    else
+        num
+    end
   end
+
 end
