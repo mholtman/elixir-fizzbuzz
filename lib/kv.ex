@@ -8,19 +8,19 @@ defmodule FizzBuzz do
 
   ## Examples
 
-      iex> FizzBuzz.fizzbuzz(1)
+      iex> FizzBuzz.fizzbuzz?(1)
       1
 
   """
-  def fizzbuzz(num) do
-    cond do
-      rem(num, 5) == 0 ->
-        "buzz"
-      rem(num, 3) == 0 ->
-        "fizz"
-       true ->
-        num
-    end
+  def fizzbuzz?(num) when rem(num, 5) == 0 do
+    "buzz"
   end
 
+  def fizzbuzz?(num) when rem(num, 3) == 0 do
+    "fizz"
+  end
+
+  def fizzbuzz?(num) when is_integer(num) do
+    num
+  end
 end
