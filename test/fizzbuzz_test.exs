@@ -25,4 +25,8 @@ defmodule FizzBuzzTest do
   test "fizzbuzz returns buzz when passed multiple of 5" do
     assert FizzBuzz.fizzbuzz?(10) == "buzz"
   end
+
+  test "fizzbuzz returns fizzbuzz when passed multiple of 15" do
+    assert FizzBuzz.fizzbuzz?(30) == "fizzbuzz"
+  end
 end
