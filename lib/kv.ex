@@ -12,15 +12,9 @@ defmodule FizzBuzz do
       1
 
   """
-  def fizzbuzz?(num) when rem(num, 5) == 0 do
-    "buzz"
-  end
 
-  def fizzbuzz?(num) when rem(num, 3) == 0 do
-    "fizz"
-  end
+  def fizzbuzz?(num) when rem(num, 5) == 0, do: "buzz"
+  def fizzbuzz?(num) when rem(num, 3) == 0, do: "fizz"
+  def fizzbuzz?(num) when is_integer(num), do: num
 
-  def fizzbuzz?(num) when is_integer(num) do
-    num
-  end
 end
