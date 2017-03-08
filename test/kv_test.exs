@@ -11,18 +11,18 @@ defmodule FizzBuzzTest do
   end
 
   test "fizzbuzz returns fizz when passed 3" do
-    assert FizzBuzz.fizzbuzz(3) == :fizz
+    assert FizzBuzz.fizzbuzz(3) == "fizz"
   end
 
   test "fizzbuzz returns fizz when passed multiple of 3" do
-    assert FizzBuzz.fizzbuzz(6) == :fizz
+    assert FizzBuzz.fizzbuzz(6) == "fizz"
   end
 
   test "fizzbuzz returns buzz when passed 5" do
-    assert FizzBuzz.fizzbuzz(5) == :buzz
+    assert FizzBuzz.fizzbuzz(5) == "buzz"
   end
 
   test "fizzbuzz returns buzz when passed multiple of 5" do
-    assert FizzBuzz.fizzbuzz(10) == :buzz
+    assert FizzBuzz.fizzbuzz(10) == "buzz"
   end
 end

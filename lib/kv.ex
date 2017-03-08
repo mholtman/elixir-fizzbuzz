@@ -15,9 +15,9 @@ defmodule FizzBuzz do
   def fizzbuzz(num) do
     cond do
       rem(num, 5) == 0 ->
-        :buzz
+        "buzz"
       rem(num, 3) == 0 ->
-        :fizz
+        "fizz"
        true ->
         num
     end
