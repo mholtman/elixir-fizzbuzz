@@ -1,8 +1,8 @@
-defmodule KV.Mixfile do
+defmodule FizzBuzz.Mixfile do
   use Mix.Project
 
   def project do
-    [app: :kv,
+    [app: :fizzbuzz,
      version: "0.1.0",
      elixir: "~> 1.4",
      build_embedded: Mix.env == :prod,

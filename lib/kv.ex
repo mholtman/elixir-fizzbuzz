@@ -1,21 +1,17 @@
-defmodule KV do
+defmodule FizzBuzz do
   @moduledoc """
-  Documentation for KV.
+  Documentation for FizzBuzz.
   """
 
   @doc """
-  Hello world.
+  FizzBuzz
 
   ## Examples
 
-      iex> KV.hello
-      :world
+      iex> FizzBuzz.fizzbuzz(1)
+      1
 
   """
-  def hello do
-    :world
-  end
-
   def fizzbuzz(num) do
     num
   end
