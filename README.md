@@ -5,8 +5,8 @@
 ## Installation
 
 ```
-docker build .
-docker run -it --rm -v "$PWD":/usr/src/elixir-fizzbuzz -w /usr/src/elixir-fizzbuzz <image sha>
+docker build  -t elixir-ubuntu .
+docker run -it --rm -v "$PWD":/usr/src/elixir-fizzbuzz -w /usr/src/elixir-fizzbuzz elixir-ubuntu
 
 ```
 
