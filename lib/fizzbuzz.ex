@@ -18,7 +18,6 @@ defmodule FizzBuzz do
 
   """
 
-  @spec fizzbuzz(integer) :: String.t
+  @spec fizzbuzz(integer) :: String.t()
   def fizzbuzz(num), do: __processNumber({rem(num, 3), rem(num, 5), num})
-
 end
